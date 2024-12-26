@@ -26,7 +26,7 @@ docker run --name bfmc -it --network host -v {path to my workplace}:/root/Simula
 I highly recommend simplifying it all the processes by running this command:
 ```
 echo "alias roson='sudo docker start bfmc && xhost +local:docker && docker exec -it bfmc /bin/bash'" >> ~/.bashrc
-alias "rosgo='docker exec -it bfmc /bin/bash'" >> ~/.bashrc
+echo "alias rosgo='docker exec -it bfmc /bin/bash'" >> ~/.bashrc
 ```
 Maybe you would use Terminator or lots of terminal to run ROS. Whenever you execute this docker container on the first terminal, you can just enter ```roson```, and from the second terminal, you can enter ```rosgo```. like this:
 
