@@ -14,7 +14,7 @@ docker pull yeongyoo/bfmc_simulator:1.0
 ### step2:running
 and you can make it into Docker container by running:
 ```
-docker run --name bfmc -it --network host -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix yeongyoo/bfmc_simulator:1.0
+docker run --name bfmc -it --network host --previliged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix yeongyoo/bfmc_simulator:1.0
 ```
 OR if you want volume mounting, you can run like:
 ```
