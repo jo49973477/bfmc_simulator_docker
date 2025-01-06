@@ -39,4 +39,9 @@ Second terminal:
 Third terminal:
 ```rosgo```
 
+inside the docker container, you should run like that:
+```
+rosenv
+roslaunch sim_pkg map_with_all_objects.launch
+```
 WOW IT IS FXCKING EASY!!!!
